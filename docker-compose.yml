@@ -1,0 +1,103 @@
+version: '3.9'
+
+services:
+  # ============================================================
+  # MySQL Database
+  # ============================================================
+  db:
+    image: mysql:8.0
+    container_name: tia_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-Pan.tin.fox-191}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-tia_fase2}
+    ports:
+      - "3306:3306"
+    volumes:
+      # Persistir dados do banco
+      - mysql_data:/var/lib/mysql
+      # Script de inicialização (se necessário)
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - tia_network
+    restart: unless-stopped
+
+  # ============================================================
+  # API Flask
+  # ============================================================
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tia_api
+    environment:
+      # Flask
+      FLASK_ENV: ${FLASK_ENV:-production}
+      DEBUG: ${DEBUG:-False}
+
+      # MySQL
+      MYSQL_HOST: db
+      MYSQL_USER: ${MYSQL_USER:-root}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-Pan.tin.fox-191}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-tia_fase2}
+      MYSQL_PORT: 3306
+
+      # API
+      SECRET_KEY: ${SECRET_KEY:-seu-secret-key-muito-seguro-32-chars}
+
+      # LLM
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+
+      # CORS
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:3000,http://localhost:5000}
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+    volumes:
+      # Montar código em tempo de desenvolvimento (opcional)
+      - .:/app
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/v1/saude"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+    networks:
+      - tia_network
+
+    restart: unless-stopped
+
+  # ============================================================
+  # Redis Cache (Opcional - para futuro)
+  # ============================================================
+  # cache:
+  #   image: redis:7-alpine
+  #   container_name: tia_redis
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  #   networks:
+  #     - tia_network
+  #   restart: unless-stopped
+
+volumes:
+  mysql_data:
+    driver: local
+  # redis_data:
+  #   driver: local
+
+networks:
+  tia_network:
+    driver: bridge

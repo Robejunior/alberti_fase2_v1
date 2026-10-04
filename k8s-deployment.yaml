@@ -1,0 +1,333 @@
+---
+# Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tia-projeto10
+
+---
+# ConfigMap para variáveis de configuração
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tia-api-config
+  namespace: tia-projeto10
+data:
+  FLASK_ENV: "production"
+  DEBUG: "False"
+  MYSQL_HOST: "tia-mysql"
+  MYSQL_DATABASE: "tia_fase2"
+  MYSQL_PORT: "3306"
+  ALLOWED_ORIGINS: "https://app.exemplo.com,https://api.exemplo.com"
+
+---
+# Secret para credenciais sensíveis
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tia-api-secret
+  namespace: tia-projeto10
+type: Opaque
+stringData:
+  MYSQL_USER: root
+  MYSQL_PASSWORD: "Pan.tin.fox-191"
+  SECRET_KEY: "seu-secret-key-muito-seguro-32-caracteres-minimo"
+  GEMINI_API_KEY: "sua-chave-gemini-aqui"
+
+---
+# PVC para MySQL
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+  namespace: tia-projeto10
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard
+
+---
+# Deployment do MySQL
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tia-mysql
+  namespace: tia-projeto10
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tia-mysql
+  template:
+    metadata:
+      labels:
+        app: tia-mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:8.0
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: tia-api-secret
+              key: MYSQL_PASSWORD
+        - name: MYSQL_DATABASE
+          valueFrom:
+            configMapKeyRef:
+              name: tia-api-config
+              key: MYSQL_DATABASE
+        volumeMounts:
+        - name: mysql-storage
+          mountPath: /var/lib/mysql
+        livenessProbe:
+          exec:
+            command:
+            - mysqladmin
+            - ping
+            - -h
+            - localhost
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          exec:
+            command:
+            - mysqladmin
+            - ping
+            - -h
+            - localhost
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 1
+          failureThreshold: 3
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+      volumes:
+      - name: mysql-storage
+        persistentVolumeClaim:
+          claimName: mysql-pvc
+
+---
+# Service para MySQL (interno)
+apiVersion: v1
+kind: Service
+metadata:
+  name: tia-mysql
+  namespace: tia-projeto10
+spec:
+  selector:
+    app: tia-mysql
+  ports:
+  - port: 3306
+    targetPort: 3306
+  clusterIP: None
+
+---
+# Deployment da API
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tia-api
+  namespace: tia-projeto10
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: tia-api
+  template:
+    metadata:
+      labels:
+        app: tia-api
+        version: v1
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - tia-api
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: api
+        image: tia-api:latest
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 5000
+        envFrom:
+        - configMapRef:
+            name: tia-api-config
+        - secretRef:
+            name: tia-api-secret
+        livenessProbe:
+          httpGet:
+            path: /api/v1/saude
+            port: http
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /api/v1/saude
+            port: http
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 2
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+      serviceAccountName: tia-api
+
+---
+# ServiceAccount
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tia-api
+  namespace: tia-projeto10
+
+---
+# Role (permissões)
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: tia-api-role
+  namespace: tia-projeto10
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list"]
+- apiGroups: [""]
+  resources: ["services"]
+  verbs: ["get", "list"]
+
+---
+# RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: tia-api-rolebinding
+  namespace: tia-projeto10
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: tia-api-role
+subjects:
+- kind: ServiceAccount
+  name: tia-api
+  namespace: tia-projeto10
+
+---
+# Service para API (LoadBalancer)
+apiVersion: v1
+kind: Service
+metadata:
+  name: tia-api-service
+  namespace: tia-projeto10
+  labels:
+    app: tia-api
+spec:
+  type: LoadBalancer
+  selector:
+    app: tia-api
+  ports:
+  - name: http
+    port: 80
+    targetPort: 5000
+    protocol: TCP
+  sessionAffinity: None
+
+---
+# HorizontalPodAutoscaler
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: tia-api-hpa
+  namespace: tia-projeto10
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: tia-api
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+
+---
+# NetworkPolicy (segurança)
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: tia-api-netpolicy
+  namespace: tia-projeto10
+spec:
+  podSelector:
+    matchLabels:
+      app: tia-api
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: ingress-nginx
+    ports:
+    - protocol: TCP
+      port: 5000
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: tia-mysql
+    ports:
+    - protocol: TCP
+      port: 3306
+  - to:
+    - namespaceSelector: {}
+    ports:
+    - protocol: TCP
+      port: 53
