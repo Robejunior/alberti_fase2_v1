@@ -221,7 +221,7 @@ def obter_classificacao(classificacao_id):
 def listar_classificacoes():
     """Listar classificações com paginação"""
     pagina = request.args.get('pagina', 0, type=int)
-    limite = min(request.args.get('limite', 10, type=int), 100)
+    limite = min(request.args.get('limite', 10, type=int), 200)
     offset = pagina * limite
 
     db = Database(config)

@@ -199,11 +199,21 @@ class Database:
         return self.obter_um(query, (classificacao_id,))
 
     def listar_classificacoes(self, limite=100, offset=0):
-        """Listar classificações com paginação"""
+        """Listar classificações com explicação do Gemini e o parecer humano mais
+        recente (quando houver), para consulta/auditoria no painel."""
         query = """
-        SELECT c.*, e.texto, e.status as explicacao_status
+        SELECT c.*, e.texto AS explicacao_texto, e.status AS explicacao_status,
+               e.origem AS explicacao_origem,
+               r.parecer, r.observacao AS revisao_observacao, r.criado_em AS revisado_em,
+               u.nome AS revisor_nome, u.papel AS revisor_papel
         FROM classificacao c
         LEFT JOIN explicacao e ON c.classificacao_id = e.classificacao_id
+        LEFT JOIN revisao r ON r.revisao_id = (
+            SELECT r2.revisao_id FROM revisao r2
+            WHERE r2.classificacao_id = c.classificacao_id
+            ORDER BY r2.criado_em DESC LIMIT 1
+        )
+        LEFT JOIN usuario u ON u.usuario_id = r.usuario_id
         ORDER BY c.criado_em DESC
         LIMIT %s OFFSET %s
         """
@@ -237,7 +247,18 @@ class Database:
         return self.obter_dados(query)
 
     def inserir_usuario(self, nome, papel):
-        """Cadastrar um novo usuário revisor"""
+        """Cadastrar um revisor, reaproveitando o registro se nome+papel já
+        existir (mesmo padrão de obter_ou_criar_modelo) — evita duplicar o
+        mesmo revisor a cada novo cadastro pelo painel."""
+        existente, erro = self.obter_um(
+            "SELECT usuario_id FROM usuario WHERE nome = %s AND papel = %s",
+            (nome, papel),
+        )
+        if erro:
+            return None, erro
+        if existente:
+            return existente['usuario_id'], None
+
         query = "INSERT INTO usuario (nome, papel) VALUES (%s, %s)"
         sucesso, erro = self.executar_query(query, (nome, papel))
         if sucesso:

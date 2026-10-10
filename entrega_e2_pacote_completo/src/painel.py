@@ -1,14 +1,28 @@
 """Painel local E2 com formulário conectado à API de classificação existente."""
+import base64
 import json
+import os
 import re
 import socket
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from .config import ROOT, carregar
-from .database import Database
+from .config import ROOT
+
+# Autenticação básica (HTTP Basic Auth) para restringir o acesso ao painel.
+# Usuário/senha vêm de variáveis de ambiente definidas no serviço systemd —
+# nunca ficam gravados neste arquivo nem versionados no Git. Os valores
+# abaixo só entram em uso se essas variáveis não existirem no ambiente.
+PAINEL_USUARIO = os.environ.get("PAINEL_USUARIO", "aluno")
+PAINEL_SENHA = os.environ.get("PAINEL_SENHA", "troque-esta-senha")
 
 def snapshot():
+    """Resumo para a aba 'Explorador de Resultados': relatórios locais do
+    pipeline Colab + classificações/explicações/pareceres reais, consultados
+    direto da API de Prognóstico (porta 5000), que é quem efetivamente grava
+    tudo isso no MySQL (tia_fase2). Não há mais uma segunda conexão direta
+    ao banco aqui — uma única fonte de verdade evita os dois ficarem
+    dessincronizados."""
     result = {"online": False, "registros": [], "relatorios": [], "erro": None}
     for p in sorted((ROOT/"docs/evidencias").glob("*.json"), key=lambda p:p.stat().st_mtime, reverse=True)[:30]:
         try:
@@ -16,22 +30,22 @@ def snapshot():
             result["relatorios"].append({"data":r.get("inicio_utc"),"sucesso":r.get("sucesso") is True,
                 "casos":[{"caso":c.get("caso_id"),"status":c.get("status")} for c in r.get("casos",[])]})
         except (ValueError,OSError): pass
-    db=None
     try:
-        db=Database(carregar())
-        with db.conn.cursor(dictionary=True) as cur:
-            cur.execute("SELECT execucao_id,caso_id,entrada_json,resposta_json,modelo,versao_prompt,resposta_sha256,criado_em FROM baseline_execucao ORDER BY criado_em DESC LIMIT 200")
-            rows=cur.fetchall()
-        for r in rows:
-            for key in ("entrada_json","resposta_json"):
-                if isinstance(r[key],str): r[key]=json.loads(r[key])
-            r["criado_em"]=str(r["criado_em"])
-        result.update(online=True,registros=rows)
-    except Exception as e:
-        code=getattr(e,"errno",None)
-        result["erro"]={1049:"Banco não encontrado.",1045:"Credenciais MySQL recusadas.",1146:"Tabela da baseline ainda não criada."}.get(code,"Não foi possível consultar o banco. Confira o .env e o serviço MySQL.")
-    finally:
-        if db: db.close()
+        with urlopen("http://127.0.0.1:5000/api/v1/classificacoes?limite=200", timeout=15) as response:
+            payload=json.load(response)
+        if not payload.get("sucesso"):
+            raise ValueError(payload.get("erro") or "A API não confirmou a consulta.")
+        result.update(online=True, registros=(payload.get("dados") or {}).get("classificacoes") or [])
+    except HTTPError as exc:
+        try:
+            corpo=json.load(exc)
+            result["erro"]=corpo.get("erro") or f"A API retornou HTTP {exc.code}."
+        except (ValueError, OSError):
+            result["erro"]=f"A API retornou HTTP {exc.code}."
+    except (URLError, OSError):
+        result["erro"]="API de classificação indisponível na porta 5000. Confira se api_fase3/app.py está rodando."
+    except ValueError as e:
+        result["erro"]=str(e) or "Não foi possível consultar as classificações."
     return result
 
 def validar_avaliacao(dado):
@@ -46,10 +60,37 @@ def validar_avaliacao(dado):
     if not isinstance(dado["diagnostico_principal"],str) or not re.fullmatch(r"[A-Z][0-9]{2}(?:\.?[0-9A-Z]{1,2})?",dado["diagnostico_principal"]):
         raise ValueError("CID inválido")
 
+# Lista de "Host" aceitos — proteção contra DNS rebinding. Inclui o IP
+# público do servidor Hetzner para permitir acesso externo ao painel.
+HOSTS_PERMITIDOS = ("127.0.0.1:8503", "localhost:8503", "204.168.165.21:8503")
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args): pass
+
+    def _autenticado(self):
+        """Confere usuário/senha enviados via HTTP Basic Auth."""
+        cabecalho = self.headers.get("Authorization", "")
+        if not cabecalho.startswith("Basic "):
+            return False
+        try:
+            usuario, _, senha = base64.b64decode(cabecalho[6:]).decode("utf-8").partition(":")
+        except (ValueError, UnicodeDecodeError):
+            return False
+        return usuario == PAINEL_USUARIO and senha == PAINEL_SENHA
+
+    def _exigir_login(self):
+        corpo = "Acesso restrito ao Projeto Integrador (TIA). Informe usuário e senha.".encode("utf-8")
+        self.send_response(401)
+        self.send_header("WWW-Authenticate", 'Basic realm="TIA - Acesso restrito"')
+        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.send_header("Content-Length", str(len(corpo)))
+        self.end_headers()
+        self.wfile.write(corpo)
+
     def do_POST(self):
-        allowed = ("127.0.0.1:8503", "localhost:8503")
+        if not self._autenticado():
+            self._exigir_login(); return
+        allowed = HOSTS_PERMITIDOS
         if self.headers.get("Host") not in allowed or self.headers.get("Origin") not in tuple("http://"+h for h in allowed):
             self.send_error(403); return
         if self.path not in ("/api/validar", "/api/avaliar", "/api/revisao", "/api/usuarios"):
@@ -96,7 +137,9 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers();self.wfile.write(data)
 
     def do_GET(self):
-        if self.headers.get("Host") not in ("127.0.0.1:8503","localhost:8503"):
+        if not self._autenticado():
+            self._exigir_login(); return
+        if self.headers.get("Host") not in HOSTS_PERMITIDOS:
             self.send_error(403); return
         routes={"/":("index.html","text/html"),"/style.css":("style.css","text/css"),"/app.js":("app.js","text/javascript")}
         if self.path in ("/api/usuarios", "/api/pendentes"):
@@ -130,8 +173,8 @@ class PainelServer(ThreadingHTTPServer):
         super().server_bind()
 
 if __name__=="__main__":
-    servidor=PainelServer(("127.0.0.1",8503),Handler)
-    print("Painel E2: http://127.0.0.1:8503 — Ctrl+C para encerrar",flush=True)
+    servidor=PainelServer(("0.0.0.0",8503),Handler)
+    print("Painel E2: http://204.168.165.21:8503 (ou http://127.0.0.1:8503 localmente) — Ctrl+C para encerrar",flush=True)
     try:
         servidor.serve_forever()
     except KeyboardInterrupt:
