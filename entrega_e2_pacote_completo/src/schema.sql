@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS baseline_execucao (
+ execucao_id CHAR(36) NOT NULL PRIMARY KEY,
+ caso_id VARCHAR(32) NOT NULL,
+ entrada_json JSON NOT NULL,
+ resposta_bruta LONGTEXT NOT NULL,
+ resposta_json JSON NOT NULL,
+ modelo VARCHAR(120) NOT NULL,
+ versao_prompt VARCHAR(32) NOT NULL,
+ entrada_sha256 CHAR(64) NOT NULL,
+ resposta_sha256 CHAR(64) NOT NULL,
+ criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

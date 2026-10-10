@@ -12,3 +12,6 @@ api_fase3/venv/
 api_fase3/.venv/
 *.log
 backups/
+
+# Arquivos temporários de upload interrompido
+*.tmp

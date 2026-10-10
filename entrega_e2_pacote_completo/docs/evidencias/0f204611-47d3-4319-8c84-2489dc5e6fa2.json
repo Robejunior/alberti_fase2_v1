@@ -1,0 +1,24 @@
+{
+  "inicio_utc": "2026-10-07T20:49:41.252544+00:00",
+  "casos": [
+    {
+      "caso_id": "SINT_001",
+      "status": "FALHA",
+      "tipo_erro": "ClientError",
+      "detalhe_erro": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+    },
+    {
+      "caso_id": "SINT_002",
+      "status": "FALHA",
+      "tipo_erro": "ClientError",
+      "detalhe_erro": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+    },
+    {
+      "caso_id": "SINT_003",
+      "status": "FALHA",
+      "tipo_erro": "ClientError",
+      "detalhe_erro": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+    }
+  ],
+  "sucesso": false
+}

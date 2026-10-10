@@ -1,0 +1,3602 @@
+[
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 67,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 61,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 74,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 65,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 62,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 83,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 64,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 60,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 66,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 74,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 75,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 66,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 64,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 93,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 80,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 79,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 66,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 95,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 77,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 69,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 61,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 5,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 74,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 90,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 65,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 86,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 88,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 71,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 93,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 74,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 60,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 63,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 75,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 60,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 77,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 77,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 61,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 95,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 85,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 63,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 70,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 91,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 84,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 69,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 88,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 76,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 75,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 68,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 89,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 66,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 74,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 67,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 67,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 86,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 90,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 83,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 90,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 95,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 65,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 91,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 60,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 74,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 79,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 65,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 88,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 70,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 83,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 88,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 74,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 67,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 69,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 84,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 82,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 94,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 90,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 91,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 82,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 64,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 88,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 67,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 90,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 80,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 70,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 61,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 61,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 91,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 79,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 79,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 79,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 74,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 72,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 90,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 70,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 74,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 78,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 68,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 89,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 75,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 81,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 67,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 79,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 90,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 76,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 63,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 67,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 63,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 71,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 72,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 73,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 61,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 74,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 81,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 60,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 90,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 61,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 87,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 72,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 62,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 70,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 66,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 90,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 73,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 64,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 77,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 77,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 95,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 79,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 90,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 89,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 84,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 68,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 80,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 4,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 83,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TESTE",
+    "idade": 95,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 86,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 0,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 69,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 3,
+    "readmitido_30d": 1
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 94,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 82,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 85,
+    "cid10": "E11",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "R51",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 92,
+    "cid10": "I10",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 65,
+    "cid10": "I50.0",
+    "internacoes_anteriores_12_meses": 2,
+    "readmitido_30d": 0
+  },
+  {
+    "origem": "SINTETICA",
+    "semente": 42,
+    "particao": "TREINO",
+    "idade": 93,
+    "cid10": "J18",
+    "internacoes_anteriores_12_meses": 1,
+    "readmitido_30d": 1
+  }
+]

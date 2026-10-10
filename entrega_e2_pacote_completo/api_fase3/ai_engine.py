@@ -18,6 +18,7 @@ o pipeline não deve quebrar: cai num texto de RESERVA gerado localmente a
 partir dos fatores já calculados pela árvore, e marca origem='RESERVA'.
 """
 
+import re
 import time
 
 try:
@@ -150,14 +151,34 @@ class AIEngine:
         """
         return prompt.strip()
 
+    def _motivo_legivel(self, motivo):
+        """Reduz o motivo da falha a uma frase curta e legível para exibição.
+
+        O SDK do Gemini costuma levantar exceções cujo str() é um dicionário
+        Python gigante, com toda a estrutura de erro da API do Google (code,
+        message, status, details aninhados). Isso é ótimo para log, péssimo
+        para mostrar na tela de explicação. Aqui extraímos só a mensagem
+        humana ('message': '...') quando existir; o motivo bruto continua
+        sendo gravado em explicacao.detalhe_falha, para quem precisar depurar.
+        """
+        if not motivo:
+            return 'motivo desconhecido'
+        match = re.search(r"'message':\s*'([^']+)'", motivo)
+        if match:
+            return match.group(1)
+        if len(motivo) > 160:
+            return motivo[:160].rstrip() + '...'
+        return motivo
+
     def _resposta_reserva(self, dados_paciente, resultado_arvore, inicio, tentativas, motivo):
         """Fallback local quando o Gemini não está disponível: usa os próprios
         fatores já calculados pela árvore para montar um texto determinístico,
         para que o pipeline nunca fique sem explicação persistida."""
         risco = resultado_arvore.get('risco')
         probabilidade = resultado_arvore.get('probabilidade')
+        motivo_legivel = self._motivo_legivel(motivo)
         texto = (
-            f"[RESERVA — Gemini indisponível: {motivo}] "
+            f"[RESERVA — Gemini indisponível: {motivo_legivel}] "
             f"A Árvore de Decisão classificou o risco de readmissão como {risco} "
             f"(probabilidade estimada {probabilidade}), considerando idade "
             f"{dados_paciente.get('idade')}, diagnóstico "

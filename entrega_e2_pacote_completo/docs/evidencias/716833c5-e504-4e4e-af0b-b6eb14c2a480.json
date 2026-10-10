@@ -1,0 +1,27 @@
+{
+  "inicio_utc": "2026-10-07T20:53:36.334361+00:00",
+  "casos": [
+    {
+      "caso_id": "SINT_001",
+      "execucao_id": "2c84e7fc-6579-4b9d-b351-b6ffaa4a7cf9",
+      "status": "PERSISTIDO_E_RELIDO",
+      "modelo": "gemini-3.1-flash-lite",
+      "resposta_sha256": "172fc924320ed90ec90e350ff922e4d4c1bbf35d23d29d742b10d358d2d51b0d"
+    },
+    {
+      "caso_id": "SINT_002",
+      "execucao_id": "92b9cdab-e52d-4ce0-817d-bddf91f3a785",
+      "status": "PERSISTIDO_E_RELIDO",
+      "modelo": "gemini-3.1-flash-lite",
+      "resposta_sha256": "d18dda9539f5c97bd222f0e4bec76d21a96f3c06ae2632e7fb42ab41540ceaf7"
+    },
+    {
+      "caso_id": "SINT_003",
+      "execucao_id": "901e8a9d-87a6-452c-af3e-b6d0ddde9e26",
+      "status": "PERSISTIDO_E_RELIDO",
+      "modelo": "gemini-3.1-flash-lite",
+      "resposta_sha256": "92cdb517ff49867a7c308c068a0eb75905c36622edbcadc579d9b1589f932a73"
+    }
+  ],
+  "sucesso": true
+}

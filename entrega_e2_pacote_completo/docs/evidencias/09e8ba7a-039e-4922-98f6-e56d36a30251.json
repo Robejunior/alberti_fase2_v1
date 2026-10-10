@@ -1,0 +1,21 @@
+{
+  "inicio_utc": "2026-10-07T19:27:32.285600+00:00",
+  "casos": [
+    {
+      "caso_id": "SINT_001",
+      "status": "FALHA",
+      "tipo_erro": "ClientError"
+    },
+    {
+      "caso_id": "SINT_002",
+      "status": "FALHA",
+      "tipo_erro": "ClientError"
+    },
+    {
+      "caso_id": "SINT_003",
+      "status": "FALHA",
+      "tipo_erro": "ClientError"
+    }
+  ],
+  "sucesso": false
+}
