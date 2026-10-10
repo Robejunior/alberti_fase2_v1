@@ -1,0 +1,23 @@
+[
+  {
+    "caso_id": "SINT_001",
+    "origem": "SINTETICA",
+    "idade": 75,
+    "diagnostico_principal": "I50.0",
+    "internacoes_anteriores_12_meses": 2
+  },
+  {
+    "caso_id": "SINT_002",
+    "origem": "SINTETICA",
+    "idade": 82,
+    "diagnostico_principal": "I10",
+    "internacoes_anteriores_12_meses": 0
+  },
+  {
+    "caso_id": "SINT_003",
+    "origem": "SINTETICA",
+    "idade": 68,
+    "diagnostico_principal": "J44.9",
+    "internacoes_anteriores_12_meses": 1
+  }
+]

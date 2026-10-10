@@ -1,0 +1,14 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+.venv-colab/
+.ipynb_checkpoints/
+
+# Painel web (src/painel.py) e API de classificação (api_fase3/)
+api_fase3/venv/
+api_fase3/.venv/
+*.log
+backups/

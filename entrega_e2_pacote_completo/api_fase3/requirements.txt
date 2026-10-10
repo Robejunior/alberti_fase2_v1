@@ -1,0 +1,18 @@
+# Dependências da API de classificação (Árvore de Decisão + explicação Gemini)
+# que o painel (../src/painel.py, porta 8503) chama em http://127.0.0.1:5000.
+#
+# Trecho equivalente, trimado para o que api_fase3/app.py realmente importa,
+# extraído de tia_api/requirements.txt (não inclui streamlit/plotly/pandas/PyJWT,
+# que pertencem ao frontend Streamlit e à autenticação ainda não plugada — ver
+# tia_api/src/auth.py, que api_fase3/app.py não usa).
+
+Flask==3.0.0
+Flask-CORS==4.0.0
+Flask-Limiter==3.5.0
+mysql-connector-python==26.7.0   # versões antigas (8.2.0) fixam protobuf<=4.21.12;
+                                  # use uma versão recente o bastante para não conflitar
+                                  # com outras dependências do projeto principal.
+python-dotenv==1.0.0
+google-genai==2.28.0             # SDK atual do Google GenAI/AI Studio
+scikit-learn==1.9.1               # Árvore de Decisão (modelo.py)
+numpy==2.5.3                      # dependência do scikit-learn
