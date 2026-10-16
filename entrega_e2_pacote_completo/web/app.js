@@ -1,3 +1,4 @@
+const _fetchOriginal=window.fetch.bind(window);window.fetch=async(...args)=>{const resposta=await _fetchOriginal(...args);if(resposta.status===401){location.href='/login?proximo='+encodeURIComponent(location.pathname+location.search+location.hash);return new Promise(()=>{})}return resposta};
 const $=id=>document.getElementById(id);let records=[],page=0,selected=null;const size=6;
 function node(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e}
 function filtered(){const q=$('search').value.toLowerCase();return records.filter(r=>((r.paciente_ref||('#'+r.classificacao_id))+' '+(r.risco_readmissao||'')).toLowerCase().includes(q)&&(!$('risk-filter').value||r.risco_readmissao===$('risk-filter').value))}

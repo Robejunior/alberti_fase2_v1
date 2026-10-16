@@ -12,3 +12,6 @@
 .risk-alto{--risk-color:#b42332}
 .risk-visual .risk-value{color:var(--risk-color,#165d54)}
 .risk-visual .gauge-percent{fill:var(--risk-color,#165d54)}
+
+.header-right{display:flex;gap:10px;align-items:center}.pill{text-decoration:none}
+.login-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center}.login-card{max-width:380px;width:100%;margin:20px}.login-card .panel{margin-bottom:0}.login-card label{display:block;font-weight:600;font-size:13px;margin-top:14px}.login-card button{margin-top:18px;width:100%}#login-status{color:#8b3527;min-height:18px;margin-top:10px;font-size:12px}

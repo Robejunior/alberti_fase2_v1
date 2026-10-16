@@ -1,20 +1,54 @@
 """Painel local E2 com formulário conectado à API de classificação existente."""
-import base64
 import json
 import os
 import re
+import secrets
 import socket
+import threading
+import time
+from http.cookies import SimpleCookie
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from .config import ROOT
 
-# Autenticação básica (HTTP Basic Auth) para restringir o acesso ao painel.
 # Usuário/senha vêm de variáveis de ambiente definidas no serviço systemd —
 # nunca ficam gravados neste arquivo nem versionados no Git. Os valores
 # abaixo só entram em uso se essas variáveis não existirem no ambiente.
 PAINEL_USUARIO = os.environ.get("PAINEL_USUARIO", "aluno")
 PAINEL_SENHA = os.environ.get("PAINEL_SENHA", "troque-esta-senha")
+
+# Sessão de login baseada em cookie (substitui o HTTP Basic Auth): permite
+# um botão "Sair" de verdade, algo que o Basic Auth não oferece — o
+# navegador guarda a credencial até ser fechado, sem nenhuma forma limpa de
+# descartá-la. Aqui, autenticar gera um token aleatório guardado só em
+# memória (reinicia o serviço, todo mundo precisa logar de novo).
+NOME_COOKIE = "tia_sessao"
+DURACAO_SESSAO_SEGUNDOS = 12 * 60 * 60  # 12 horas
+_SESSOES = {}
+_SESSOES_LOCK = threading.Lock()
+
+def _nova_sessao():
+    token = secrets.token_urlsafe(32)
+    with _SESSOES_LOCK:
+        _SESSOES[token] = time.time() + DURACAO_SESSAO_SEGUNDOS
+    return token
+
+def _sessao_valida(token):
+    if not token:
+        return False
+    with _SESSOES_LOCK:
+        validade = _SESSOES.get(token)
+        if validade is None:
+            return False
+        if time.time() > validade:
+            _SESSOES.pop(token, None)
+            return False
+    return True
+
+def _encerrar_sessao(token):
+    with _SESSOES_LOCK:
+        _SESSOES.pop(token, None)
 
 def snapshot():
     """Resumo para a aba 'Explorador de Resultados': relatórios locais do
@@ -64,32 +98,94 @@ def validar_avaliacao(dado):
 # público do servidor Hetzner para permitir acesso externo ao painel.
 HOSTS_PERMITIDOS = ("127.0.0.1:8503", "localhost:8503", "204.168.165.21:8503")
 
+# Arquivos estáticos servidos sem exigir login (a própria tela de login
+# precisa deles, e não há dado sensível no HTML/CSS/JS em si).
+ROTAS_PUBLICAS = {
+    "/login": ("login.html", "text/html"),
+    "/login.js": ("login.js", "text/javascript"),
+    "/style.css": ("style.css", "text/css"),
+    "/app.js": ("app.js", "text/javascript"),
+}
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args): pass
 
-    def _autenticado(self):
-        """Confere usuário/senha enviados via HTTP Basic Auth."""
-        cabecalho = self.headers.get("Authorization", "")
-        if not cabecalho.startswith("Basic "):
-            return False
+    def _token_sessao(self):
+        cookies = SimpleCookie()
         try:
-            usuario, _, senha = base64.b64decode(cabecalho[6:]).decode("utf-8").partition(":")
-        except (ValueError, UnicodeDecodeError):
-            return False
-        return usuario == PAINEL_USUARIO and senha == PAINEL_SENHA
+            cookies.load(self.headers.get("Cookie", ""))
+        except Exception:
+            return None
+        item = cookies.get(NOME_COOKIE)
+        return item.value if item else None
 
-    def _exigir_login(self):
-        corpo = "Acesso restrito ao Projeto Integrador (TIA). Informe usuário e senha.".encode("utf-8")
+    def _logado(self):
+        return _sessao_valida(self._token_sessao())
+
+    def _definir_cookie_sessao(self, token):
+        self.send_header("Set-Cookie", f"{NOME_COOKIE}={token}; Path=/; Max-Age={DURACAO_SESSAO_SEGUNDOS}; HttpOnly; SameSite=Lax")
+
+    def _limpar_cookie_sessao(self):
+        self.send_header("Set-Cookie", f"{NOME_COOKIE}=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax")
+
+    def _negar_acesso_api(self):
+        corpo = json.dumps({"sucesso": False, "erro": "Sessão expirada ou não autenticada. Atualize a página."}, ensure_ascii=False).encode("utf-8")
         self.send_response(401)
-        self.send_header("WWW-Authenticate", 'Basic realm="TIA - Acesso restrito"')
-        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(corpo)))
+        self.send_header("Cache-Control", "no-store")
         self.end_headers()
         self.wfile.write(corpo)
 
+    def _responder(self, status, data, mime):
+        self.send_response(status)
+        self.send_header("Content-Type", mime+"; charset=utf-8")
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'")
+        self.end_headers()
+        self.wfile.write(data)
+
+    def _tratar_login(self):
+        if self.headers.get("Host") not in HOSTS_PERMITIDOS:
+            self.send_error(403); return
+        try:
+            comprimento = int(self.headers.get("Content-Length", "0"))
+            if not 0 < comprimento <= 1024 or self.headers.get_content_type() != "application/json":
+                raise ValueError()
+            dado = json.loads(self.rfile.read(comprimento))
+            usuario, senha = dado.get("usuario"), dado.get("senha")
+            if not isinstance(usuario, str) or not isinstance(senha, str):
+                raise ValueError()
+        except (ValueError, TypeError):
+            corpo = json.dumps({"sucesso": False, "erro": "Dados inválidos."}, ensure_ascii=False).encode("utf-8")
+            self.send_response(400)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(corpo)))
+            self.end_headers(); self.wfile.write(corpo); return
+
+        if usuario == PAINEL_USUARIO and senha == PAINEL_SENHA:
+            token = _nova_sessao()
+            corpo = json.dumps({"sucesso": True}, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self._definir_cookie_sessao(token)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(corpo)))
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers(); self.wfile.write(corpo)
+        else:
+            corpo = json.dumps({"sucesso": False, "erro": "Usuário ou senha incorretos."}, ensure_ascii=False).encode("utf-8")
+            self.send_response(401)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(corpo)))
+            self.end_headers(); self.wfile.write(corpo)
+
     def do_POST(self):
-        if not self._autenticado():
-            self._exigir_login(); return
+        if self.path == "/login":
+            self._tratar_login(); return
+        if not self._logado():
+            self._negar_acesso_api(); return
         allowed = HOSTS_PERMITIDOS
         if self.headers.get("Host") not in allowed or self.headers.get("Origin") not in tuple("http://"+h for h in allowed):
             self.send_error(403); return
@@ -137,12 +233,40 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers();self.wfile.write(data)
 
     def do_GET(self):
-        if not self._autenticado():
-            self._exigir_login(); return
         if self.headers.get("Host") not in HOSTS_PERMITIDOS:
             self.send_error(403); return
-        routes={"/":("index.html","text/html"),"/style.css":("style.css","text/css"),"/app.js":("app.js","text/javascript")}
+
+        if self.path == "/logout":
+            token = self._token_sessao()
+            if token:
+                _encerrar_sessao(token)
+            self.send_response(302)
+            self.send_header("Location", "/login")
+            self._limpar_cookie_sessao()
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+            return
+
+        if self.path in ROTAS_PUBLICAS:
+            nome, mime = ROTAS_PUBLICAS[self.path]
+            self._responder(200, (ROOT/"web"/nome).read_bytes(), mime)
+            return
+
+        logado = self._logado()
+
+        if self.path == "/":
+            if not logado:
+                self.send_response(302)
+                self.send_header("Location", "/login")
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return
+            self._responder(200, (ROOT/"web"/"index.html").read_bytes(), "text/html")
+            return
+
         if self.path in ("/api/usuarios", "/api/pendentes"):
+            if not logado:
+                self._negar_acesso_api(); return
             endpoint={"/api/usuarios":"usuarios","/api/pendentes":"revisao/pendentes?limite=100"}[self.path]
             try:
                 with urlopen("http://127.0.0.1:5000/api/v1/"+endpoint,timeout=15) as response:
@@ -150,20 +274,17 @@ class Handler(BaseHTTPRequestHandler):
                 json.loads(data)
             except (OSError,ValueError):
                 data=json.dumps({"sucesso":False,"erro":"Não foi possível consultar a API da porta 5000."}).encode()
-            mime="application/json"
-        elif self.path=="/api/painel":
-            data=json.dumps(snapshot(),ensure_ascii=False).encode("utf-8");mime="application/json"
-        elif self.path in routes:
-            name,mime=routes[self.path];data=(ROOT/"web"/name).read_bytes()
-        else:
-            self.send_error(404);return
-        self.send_response(200)
-        self.send_header("Content-Type",mime+"; charset=utf-8")
-        self.send_header("Content-Length",str(len(data)))
-        self.send_header("Cache-Control","no-store")
-        self.send_header("X-Content-Type-Options","nosniff")
-        self.send_header("Content-Security-Policy","default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'")
-        self.end_headers();self.wfile.write(data)
+            self._responder(200, data, "application/json")
+            return
+
+        if self.path == "/api/painel":
+            if not logado:
+                self._negar_acesso_api(); return
+            data=json.dumps(snapshot(),ensure_ascii=False).encode("utf-8")
+            self._responder(200, data, "application/json")
+            return
+
+        self.send_error(404)
 
 class PainelServer(ThreadingHTTPServer):
     allow_reuse_address = False
